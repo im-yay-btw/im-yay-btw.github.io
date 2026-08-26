@@ -1,14 +1,13 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-	let { id, header, body }: { id: string; header?: Snippet; body: Snippet } = $props();
+	let props = $props();
 </script>
 
-<section {id} class={['flex min-h-screen flex-col gap-8 px-6 py-24 sm:px-18']}>
-	{#if header}
-		<div class="*:mb-2 *:not-first:text-xl *:not-first:text-neutral-600 first:text-4xl md:max-w-1/2">
-			{@render header()}
+<section class={['relative min-h-screen p-6 lg:p-16', props.class]}>
+	{#if props.header}
+		<div class="mb-6 space-y-1 text-lg *:not-first:opacity-50 *:first:text-2xl lg:w-xl">
+			{@render props.header?.()}
 		</div>
 	{/if}
 
-	{@render body()}
+	{@render props.children?.()}
 </section>

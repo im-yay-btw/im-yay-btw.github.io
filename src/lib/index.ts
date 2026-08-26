@@ -1,2 +1,2 @@
-export const GITHUB_ID = '268245564';
-export const DISCORD_ID = '1200883342527180830';
+export const HUB_ID = "268245564";
+export const DISCORD_ID = "1200883342527180830";

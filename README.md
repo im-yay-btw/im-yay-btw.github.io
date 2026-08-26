@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.15.1 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" --install npm nyay.dev
+bun x sv@0.17.0 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" sveltekit-adapter="adapter:static" --install bun im-yay-btw.github.io
 ```
 
 ## Developing

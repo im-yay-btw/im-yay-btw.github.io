@@ -1,34 +1,26 @@
 @import 'tailwindcss';
 
 @theme inline {
-	--font-sans: 'Satoshi', sans-serif;
-	--font-mono: 'SF Mono', monospace;
+	--font-sans: 'DM Sans', sans-serif;
+	--font-mono: 'DM Mono', monospace;
+}
+
+html {
+	@apply select-text scrollbar-none;
+}
+
+::selection {
+    @apply bg-white/25;
 }
 
 body {
-	@apply bg-neutral-900 text-neutral-200;
+	@apply bg-black  text-white;
 }
 
-.primary {
-	@apply bg-neutral-200/25 px-6 py-2 text-neutral-200 ring-1 ring-neutral-600/50 transition-all duration-100 ease-in;
-
-	@variant hover {
-		@apply shadow-[0_0_24px] shadow-neutral-600;
-	}
-
-	@variant active {
-		@apply scale-98 brightness-75;
-	}
+@utility transition-hidden {
+	@apply pointer-events-none opacity-0;
 }
 
-.secondary {
-	@apply bg-neutral-800/50 px-6 py-2 ring-1 ring-neutral-600/50 transition-all duration-100 ease-in;
-
-	@variant hover {
-		@apply ring-2;
-	}
-
-	@variant active {
-		@apply scale-98 brightness-75;
-	}
+@utility transition-block {
+	@apply pointer-events-auto opacity-100;
 }
