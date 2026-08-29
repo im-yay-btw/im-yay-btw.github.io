@@ -94,7 +94,7 @@
 					class="absolute top-1 -left-1.5 size-3 rounded-full border-2 border-neutral-800 bg-black"
 				></div>
 
-				<time>November 16st of 2023</time>
+				<time>November 16th of 2023</time>
 				<p class="mb-2 text-2xl">Eden Games</p>
 				<p class="text-lg opacity-50">
 					A short day of discovery within the company, it was fun, and made me even more intrested
