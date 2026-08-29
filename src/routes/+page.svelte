@@ -11,9 +11,9 @@
 
 <Loading bind:clicked={ready} />
 
-<Player playlist={['bg-music-1.mp3', 'bg-music-1.mp3']} play={ready} />
+<Player playlist={['bg-music-1.mp3', 'bg-music-2.mp3', 'bg-music-3.mp3']} play={ready} />
 
-<Background src="bg-movie-3.mp4" autoplay={ready} />
+<Background src="bg-movie-1.mp4" autoplay={ready} />
 
 <div class="flex min-h-screen items-center justify-center p-8">
 	<div class="flex gap-24 not-sm:w-full not-lg:flex-col">
@@ -37,8 +37,8 @@
 
 			<ul class="space-y-6 sm:w-xs">
 				<p class="mb-12">
-					Hello, I am a fifteen-year-old developer who explores the fields of computer science in
-					particular game dev, low-level dev and application development.
+					Hello, I am a fifteen-year-old developer and I love exploring fields of programming and
+					digital arts.
 				</p>
 
 				<li>
@@ -70,7 +70,8 @@
 		<div class="not-md:hidden">
 			<div class="flex size-full items-center">
 				<div class="flex w-lg flex-col items-center text-center">
-					<p class="mb-6 text-shadow-[0_0_12px] text-6xl">/ᐠ - ˕ -マ ᶻ 𝗓 𐰁</p>
+					<p class="mb-6 text-6xl text-shadow-[0_0_12px]">/ᐠ - ˕ -マ ᶻ 𝗓 𐰁</p>
+
 					<p class="mb-8 w-xs opacity-50">
 						“Well... I'm not working today, sorry, come back tomorrow...” - The cat
 					</p>

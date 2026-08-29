@@ -4,7 +4,7 @@
 	let index = $state(0);
 	let audio: HTMLAudioElement;
 
-	let volume = $state(10.0);
+	let volume = $state(64.0);
 	let muted = $state(false);
 
 	function next() {

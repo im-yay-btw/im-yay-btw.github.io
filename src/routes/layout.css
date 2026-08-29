@@ -6,15 +6,15 @@
 }
 
 html {
-	@apply select-text scrollbar-none;
+	@apply scrollbar-none select-text;
 }
 
 ::selection {
-    @apply bg-white/25;
+	@apply bg-white/25;
 }
 
 body {
-	@apply bg-black  text-white;
+	@apply bg-black text-white;
 }
 
 @utility transition-hidden {

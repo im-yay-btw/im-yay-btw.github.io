@@ -6,11 +6,11 @@
 </script>
 
 <Section class="-mt-24 space-y-16 lg:-mt-32">
-	<div class="grid gap-4 md:grid-cols-2">
+	<div class="grid gap-2 md:grid-cols-2">
 		{#each $REPOS
 			?.sort((a, b) => b.stargazers_count - a.stargazers_count)
 			.slice(0, 8) as repository (repository)}
-			<div class="rounded-sm p-8 ring-2 ring-neutral-900">
+			<div class="rounded-sm border-2 border-neutral-600/25 p-8">
 				<a class="text-xl underline underline-offset-6" href={repository.html_url}>
 					/{repository.name}
 				</a>
@@ -69,7 +69,7 @@
 		whileInView={{ opacity: 1, y: 0 }}
 		viewport={{ once: true, amount: 0.6, margin: '-48px' }}
 		transition={{ duration: 0.6 }}
-		class="flex gap-2 overflow-x-auto mask-r-from-80% pb-6 *:shrink *:max-w-4xl"
+		class="flex gap-2 overflow-x-auto mask-r-from-80% pb-6 *:max-w-4xl *:shrink"
 	>
 		<Project
 			link="https://im-yay-btw.io/"

@@ -3,7 +3,7 @@
 
 	let {
 		link = 'https://www.example.com/',
-		bg = '',
+		// bg = '',
 		title = 'Project',
 		description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ex minus accusantium sapiente illum, et amet, blanditiis doloribus vel atque magnam, voluptatibus facere at?',
 		stacks = ['']
@@ -12,7 +12,7 @@
 
 <a
 	href={link}
-	class="group transform-all relative flex h-128 w-4xl items-end rounded-2xl border-2 border-neutral-600/25 p-6 transition-all duration-200 ease-in-out active:scale-98 {!bg}"
+	class="group transform-all relative flex h-128 w-4xl items-end rounded-2xl border-2 border-neutral-600/25 p-6 transition-all duration-200 ease-in-out active:scale-98"
 >
 	<div
 		class="transition-block absolute top-0 left-0 z-99 flex size-full items-center justify-center backdrop-brightness-25 transition-all duration-200 ease-in-out not-group-hover:transition-hidden"
@@ -26,7 +26,7 @@
 		<p class="text-4xl text-shadow-[0_0_12px]">{title}</p>
 		<p class="mb-4">{description}</p>
 
-		<div class="space-y-2">
+		<div class="-mb-2 space-y-2">
 			{#each stacks as stack (stack)}
 				<span
 					class="mr-2 inline-flex items-center gap-2 rounded-xs border-2 border-neutral-600 px-3.5 py-1 backdrop-blur-xs backdrop-brightness-80"
